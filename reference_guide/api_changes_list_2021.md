@@ -120,6 +120,9 @@ Constructor `com.intellij.codeInsight.hints.settings.InlayProviderSettingsModel`
 `com.intellij.codeInsight.hints.settings.InlayProviderSettingsModel.getCasePreview(ImmediateConfigurable.Case)` abstract method added
 : Provides preview text for given case.
 
+`com.intellij.ui.EditorTextField.addNotify()` method marked final
+: Editor is not instantiated at this point. Use `com.intellij.ui.EditorTextField.addSettingsProvider` to customize Editor or override `com.intellij.ui.EditorTextField.onEditorAdded`.
+
 ### VCS Log 2021.3
 
 `com.intellij.vcs.log.ui.frame.CommitPanel` class removed
